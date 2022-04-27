@@ -1,0 +1,67 @@
+Gherkin language
+
+Given - pre condition
+When -actions we need to perform
+And - supporting tag
+Then - expected results
+
+Recap-
+What is framework?
+-- it is an organized structire of folders and packages which allows us to write clean and maintanable code
+
+build management tool.
+-- maven
+
+pom.xml is the main configuration file in maven project
+
+main -- it is used to write the code for development
+test -- it is used to write the code to test the application
+-- java -- for tech/coding we use java directory
+-- resources - for non tech/non code we use resources
+
+cucumber -- it supports 800
+-- we use gherkin language (plain english text) to write the scenarios
+-- it works with junit
+
+Scenario -- it is  a test case
+Given -- pre condition
+When -- actions
+And --supporting tag
+Then -- results
+
+US 12345 -- Employee search
+
+Scenario -- Search employee by id
+Given user is navigated to HRMS Application
+When user enters valid admin credentials
+And user clicks on login button
+And user navigates to employee list page
+When user enters valid employee id
+And clicks on search button
+Then user is able to see employee information
+
+Scenario -- Search employee by name
+Given user is navigated to HRMS Application
+When user enters valid admin credentials
+And user clicks on login button
+And user navigates to employee list page
+When user enters valid name
+And clicks on search button
+Then user is able to see employee information
+
+file where we write BDD scenarios is feature file
+this file has .feature extension
+
+Class 3
+Recap -
+
+we use features file to write our scenarios
+-- search employee by id
+-- search employee by name
+
+In feature file we write scenarios using gherking language
+--Given, when, and, then, scenario, feature
+
+after feature file, we need to
+
+
