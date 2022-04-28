@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.Command;
+import pages.LoginPage;
 import utils.CommonMethods;
 import utils.ConfigReader;
 import utils.Constants;
@@ -17,21 +18,24 @@ public class EmployeeSearchSteps extends CommonMethods {
     public void user_is_navigated_to_hrms_application() {
         openBrowserAndLunchApplication();
     }
+
     @When("user enters valid admin credentials")
     public void user_enters_valid_admin_credentials() {
-        WebElement usernamefield = driver.findElement(By.id("txtUsername"));
+        //LoginPage login=new LoginPage();
+        //WebElement usernamefield = driver.findElement(By.id("txtUsername"));
         //usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(usernamefield, ConfigReader.getPropertyValue("username"));
-        WebElement passwordField = driver.findElement(By.name("txtPassword"));
-        sendText(passwordField, ConfigReader.getPropertyValue("password"));
+        sendText(login.usernamebox, ConfigReader.getPropertyValue("username"));
+        //WebElement passwordField = driver.findElement(By.name("txtPassword"));
+        sendText(login.passwordBox, ConfigReader.getPropertyValue("password"));
         //passwordField.sendKeys(ConfigReader.getPropertyValue("password"));
 
     }
 
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
-        WebElement loginButton = driver.findElement(By.id("btnLogin"));
-        click(loginButton);
+        //LoginPage login=new LoginPage();
+        //WebElement loginButton = driver.findElement(By.id("btnLogin"));
+        click(login.LoginBtn);
         //loginButton.click();
         //driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
     }

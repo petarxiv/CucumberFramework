@@ -9,10 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.PageInitializers;
 
 import java.util.concurrent.TimeUnit;
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializers {
 
     public static WebDriver driver;
 
