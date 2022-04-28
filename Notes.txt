@@ -62,6 +62,18 @@ we use features file to write our scenarios
 In feature file we write scenarios using gherking language
 --Given, when, and, then, scenario, feature
 
-after feature file, we need to
+after feature file, we need to create step definitions
 
+---------------
+class 4
+Recap--
+-------
+Common methods class in our framework is used to write all the methods we will be using in majority of scenarios
+(Code reusability)
 
+sendText method, click
+
+in constants class we provide implicit wait, explicit wait values and test data path
+
+page object model is a design pattern
+According to page object model, we create page classes for all the screens available in the application
