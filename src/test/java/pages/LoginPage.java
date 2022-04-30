@@ -8,7 +8,7 @@ import utils.CommonMethods;
 public class LoginPage extends CommonMethods {
 
     @FindBy(id="txtUsername")
-    public WebElement usernamebox;
+    public WebElement usernameBox;
 
     @FindBy(name = "txtPassword")
     public WebElement passwordBox;

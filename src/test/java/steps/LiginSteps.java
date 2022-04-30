@@ -20,7 +20,7 @@ public class LiginSteps extends CommonMethods {
         //LoginPage login=new LoginPage();
         //WebElement usernamefield = driver.findElement(By.id("txtUsername"));
         //usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(login.usernamebox,"tts12345");
+        sendText(login.usernameBox,"tts12345");
         //WebElement passwordField = driver.findElement(By.name("txtPassword"));
         sendText(login.passwordBox, "Hum@nhrm");
     }
@@ -34,7 +34,7 @@ public class LiginSteps extends CommonMethods {
        // LoginPage login=new LoginPage();
        // WebElement usernamefield = driver.findElement(By.id("txtUsername"));
         //usernamefield.sendKeys(ConfigReader.getPropertyValue("username"));
-        sendText(login.usernamebox,"tts12345");
+        sendText(login.usernameBox,"tts12345");
         //WebElement passwordField = driver.findElement(By.name("txtPassword"));
         sendText(login.passwordBox, "Hum@nhrm");
     }

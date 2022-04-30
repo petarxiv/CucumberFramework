@@ -77,3 +77,15 @@ in constants class we provide implicit wait, explicit wait values and test data 
 
 page object model is a design pattern
 According to page object model, we create page classes for all the screens available in the application
+---------------
+Class 5
+
+Recap --
+
+Creating multiple steps classes for multiple features files.
+
+Page object model design pattern
+
+in common methods we are calling page initializers method, this method is going to call the objects pf
+page classes which will call the constructor and these constructors will initialize all the web elements
+

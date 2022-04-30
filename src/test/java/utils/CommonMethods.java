@@ -34,6 +34,7 @@ public class CommonMethods extends PageInitializers {
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        initializePageObjects();
     }
     public static void sendText(WebElement element, String textToSend){
         element.clear();
