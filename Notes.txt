@@ -88,4 +88,42 @@ Page object model design pattern
 
 in common methods we are calling page initializers method, this method is going to call the objects pf
 page classes which will call the constructor and these constructors will initialize all the web elements
+-----------------
+
+Class 6
+
+Recap --
+
+Runner class - we use this class to execute test cases in cucumber
+
+cucumber options:
+--features = path of feature file
+--glue - to provide the path of steps definitions
+--dryRun - it provides step definition to add in steps classes
+--monochrome - if it is set to true, it cleans the console
+-- tags - we use tags to execute scenarios in groups
+    --here we use OR and AND to execute scenarios from 2 or more different tags together
+
+ Background: we take common steps from scenarios and put them in background
+
+Hooks: we use hooks to provide pre condition and post condition to all the scenarios
+We always create hooks in steps package
+
+Background vs hooks:
+background - it is applicable to one feature file
+hooks - it is applicable to all the feature files
+
+----------------
+
+Class 7
+
+--recap
+------ hooks - to write pre conditions and post conditions of the project, we use hooks.
+@before and @after - 2 types of hooks we have in cucumber
+we always write hooks steps package
+
+--
+Data driven testing part-
+--using examples table and scenario outline
+--using data table
 
