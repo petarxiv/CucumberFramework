@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package pages;
 
 import org.openqa.selenium.WebElement;
@@ -12,24 +7,38 @@ import utils.CommonMethods;
 
 public class AddEmployeePage extends CommonMethods {
 
-    @FindBy(
-            id = "firstName"
-    )
+    @FindBy(id="firstName")
     public WebElement firstNameField;
-    @FindBy(
-            id = "middleName"
-    )
+
+    @FindBy(id="middleName")
     public WebElement middleNameField;
-    @FindBy(
-            id = "lastName"
-    )
+
+    @FindBy(id="lastName")
     public WebElement lastNameField;
-    @FindBy(
-            id = "btnSave"
-    )
+
+    @FindBy(id="btnSave")
     public WebElement saveButton;
 
-    public AddEmployeePage() {
+    @FindBy(id="employeeId")
+    public WebElement empIDLocator;
+
+    @FindBy(id="photofile")
+    public WebElement photograph;
+
+    @FindBy(id="chkLogin")
+    public WebElement checkBox;
+
+    @FindBy(id="user_name")
+    public WebElement createUsername;
+
+    @FindBy(id="user_password")
+    public WebElement createPassword;
+
+    @FindBy(id="re_password")
+    public WebElement confirmPassword;
+
+    public AddEmployeePage(){
         PageFactory.initElements(driver, this);
     }
+
 }

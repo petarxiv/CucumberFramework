@@ -21,10 +21,13 @@ import org.junit.runner.RunWith;
         monochrome = true,
         //tags will identify the scenario based on the tag we provide in the feature file
         //use or if we need to execute scenarios from logical or keyword which will execute either of the
-        //scenario having the tag
+        //senario having the tag
         //use and if we need to execute scenarios from logical and keyword which will execute the scenarios
         //having both the tags in it
-        tags = "@dashboard"
+        tags = "@sprint12",
+        //html report will  be generated under target folder
+        plugin = {"html:target/cucumber.html", "pretty", "json:target/cucumber.json"
+        }
 )
 
 public class RunnerClass {
