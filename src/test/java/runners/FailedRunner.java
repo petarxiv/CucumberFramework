@@ -1,5 +1,6 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -13,7 +14,7 @@ import org.junit.runner.RunWith;
         glue = "steps",
         //dryRun we use to get the step definitions of undefined steps.
         //if we set it to true, it will quickly scan all gherkin steps whether they are implemented or not
-        //if we set it to false, it stops actual execution
+        //if we set it to true, it stops actual execution
         // to execute scripts in real time, we should set this value to false
         dryRun = false,
         //it means the console output for cucumber test is having irrelevant information
@@ -24,9 +25,8 @@ import org.junit.runner.RunWith;
         //senario having the tag
         //use and if we need to execute scenarios from logical and keyword which will execute the scenarios
         //having both the tags in it
-        //tags = "@sprint12",
-        //html report will be generated under target folder
-
+        // tags = "@sprint12",
+        //html report will  be generated under target folder
         plugin = {"pretty"
         }
 )

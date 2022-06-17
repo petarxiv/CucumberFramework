@@ -126,4 +126,17 @@ we always write hooks steps package
 Data driven testing part-
 --using examples table and scenario outline
 --using data table
+---------
+Class 8-9
+-----
+maven surefire plugin
+
+to clean the project - mvn clean from cmd/terminal
+to run the project - mvn test from cmd/terminal
+override the tags from cmd-mvn clean verify -Dcucumber.filter.tags="@latest"
+
+mvn clean - it cleans your target folder
+mvn test - to execute our test cases
+verify - verifies your code
+package - convert your code to packages
 
